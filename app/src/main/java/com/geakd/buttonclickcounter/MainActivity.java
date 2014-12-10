@@ -41,7 +41,7 @@ public class MainActivity extends ActionBarActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast toastMessage = Toast.makeText(this, "This Menu item was tapped.", Toast.LENGTH_LONG);
+            Toast toastMessage = Toast.makeText(this, "This Menu item was tapped. The text view has this message: " + mainTextView.getText(), Toast.LENGTH_LONG);
             toastMessage.show();
             return true;
         }
