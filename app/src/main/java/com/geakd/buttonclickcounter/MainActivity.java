@@ -21,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
         mainButton = (Button) findViewById(R.id.button);
         mainButton.setOnClickListener(new CustomOnClickListener(this));
 
-        mainTextView = (TextView) findViewById(R.id.button);
+        mainTextView = (TextView) findViewById(R.id.textView);
     }
 
 
