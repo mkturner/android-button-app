@@ -4,15 +4,24 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
 
+    Button mainButton;
+    TextView mainTextView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mainButton = (Button) findViewById(R.id.button);
+        mainButton.setOnClickListener(new CustomOnClickListener(this));
+
+        mainTextView = (TextView) findViewById(R.id.button);
     }
 
 
