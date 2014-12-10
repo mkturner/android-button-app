@@ -18,11 +18,13 @@ public class CustomOnClickListener implements View.OnClickListener{
         // String tempResult = integer.toString(count);
         /* don't need to convert, set text is char sequence which
         automatically merges numbers and strings */
-        if (count == 1) {
-            caller.mainTextView.setText("The button has been clicked " + count + " time");
-        }else{
-            caller.mainTextView.setText("The button has been clicked " + count + " times");
+        String outputString = "The button has been clicked " + count + " time";
+
+        if (count != 1) {
+            outputString += "s";
         }
+
+        caller.mainTextView.setText(outputString);
 
     }
 }
