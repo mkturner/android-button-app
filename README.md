@@ -11,4 +11,4 @@ android-button-app
 - demonstrate familiarity with using VCS (git) in Android Studio
 
 ## Instructions
-Use this guide to figure out how to configure Android Studio to pull this project from Github
+Use this [guide](https://www.jetbrains.com/idea/help/cloning-a-repository-from-github.html) to figure out how to configure Android Studio to pull this project from Github.
